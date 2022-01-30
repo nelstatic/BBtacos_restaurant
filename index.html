@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>B&B TACOS</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/96dcb489df.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#one">
+                    <img src="assets/images/logobbtacos.jpg" alt="">
+                </a>
+            </div>
+
+            <!--Menu responsive-->
+            <div class="menu-toggle"></div>
+    
+            <ul class="menu">
+                <li><a href="#menus">Nos Menus</a></li>
+                <li><a href="https://www.ubereats.com/fr/store/bb-tacos/HwxJK91LWkCnDvmz-8rc3w" target="_blank">Commandez</a></li>
+                <li><a href="#infosutiles">Infos Utiles</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+        </nav>    
+        
+        
+    </header>
+
+   
+    <!------------------------- ACCUEIL ------------------------------------------->
+
+    <section id="one">
+        <div class="accueil">
+            <div class="titre">
+                <h1>B&B Tacos</h1>
+                <a href="https://www.ubereats.com/fr/store/bb-tacos/HwxJK91LWkCnDvmz-8rc3w" target="_blank"> Commandez</a>
+            </div>
+            <div class="reseaux">
+                <ul>
+                    <li><a href="https://fr-fr.facebook.com/TacosEtampes/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/b_b_tacos/?hl=fr"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#footer"><i class="fab fa-snapchat"></i></a></li>                
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!------------------------- ABOUT US ------------------------------------------->
+
+    <section class="aboutus">
+
+        <div class="quote">
+            <h2>
+                <span class="highlight">Qui sommes-nous ?</span>  
+            </h2>
+
+            <p>N'oubliez pas d'apprécier un tacos fascinant à ce restaurant. 
+                Un personnel professionnel attend les clients tout au long de l'année. <br> 
+                Si vous voulez profiter d'un service remarquable, vous devriez aller à BB Tacos. 
+                Une ambiance sympa a été remarquée par les clients.
+            </p>
+        </div>
+
+        <div class="devanture">
+            <img src="assets/images//devanture.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <!------------------------- MENUS ------------------------------------------->
+
+
+    <section class="menus-section">
+
+        <div id="menus" class="menus">
+                <h2><span class="highlight">Nos Menus</span></h2>
+                
+                <div class="menus-images">
+                    <img src="assets/images/unnamed-18.jpg" class="gallery-item" alt="">
+                    <img src="assets/images/unnamed-19.jpg" class="gallery-item" alt="">
+                    <img src="assets/images/unnamed-17.jpg" class="gallery-item" alt="">
+                    <img src="assets/images/2018-10-12-2.jpg" class="gallery-item" alt="">
+                </div>       
+        </div>
+
+
+            <!-- Modal -->
+        <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/unnamed-17.jpg" class="modal-img" alt="Modal Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------- BANDEAU SERVICES ------------------------------------------->
+
+
+    <div class="services">
+        <div class="colonne">
+            <img src="assets/images/surplace.png" width="150px" alt="">
+        </div>
+        <div class="colonne">
+            <img src="assets/images/emporter.png" width="150px" alt="">
+        </div>
+        <div class="colonne">
+            <img src="assets/images/livraison.png" width="140px" style="margin-top: -10px;" alt="">
+        </div>   
+    </div>
+
+
+     <!------------------------- GALLERIE ------------------------------------------->
+
+
+
+    <section style="height: auto; padding: 50px 60px;">
+
+        <div class="gallerie">
+            <h2>
+                <span class="highlight">Gallerie</span>  
+            </h2>
+
+            <div class="gallerie-carousel">
+                
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                  
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/gallerie/2018-10-12-3.jpg" alt="bb tacos horaires">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/2018-10-12-1.jpg" alt="bb tacos intérieur">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/2018-10-12.jpg" alt="bb tacos intérieur">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/2017-12-05.jpg" alt="bb tacos écrans des menus">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/2018-06-21.jpg" alt="bb tacos écrans des menus">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/2021-07-06.jpg" alt="bb tacos plateau">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/2017-09-24.jpg" alt="BB tacos flyer">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/gallerie/30629830_1833011680095141_8205498554735656960_n.jpg" alt="BB Tacos cuisine">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  
+                  </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!------------------------- REVIEWS ------------------------------------------->
+
+    <section style="height: auto;">  
+        <div class="reviews">
+            <h2><span class="highlight">Avis des clients</span></h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-a8bf950f-4b0d-4dae-a5ba-b372f24cc540"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------- INFOS UTILES ------------------------------------------->
+
+
+    <section style="height: auto; padding: 50px 60px;">
+        
+        <div id="infosutiles" class="infosutiles">
+
+            <div class="googlemap">
+                <h3><span class="highlight">Plan</span></h3>
+                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10589.075636980768!2d2.152318!3d48.4321785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f4996f2a09fb01d!2sBB%20Tacos!5e0!3m2!1sfr!2sfr!4v1639570492858!5m2!1sfr!2sfr" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            
+            <div class="horaires">
+                <h3><span class="highlight">Horaires</span></h3>
+                <img src="assets/images/gallerie/2018-10-12-3.jpg"  class="gallery-item" alt="BB tacos horaires d'ouverture">
+            </div>
+        </div>
+
+    </section>
+
+    <!------------------------- FOOTER ------------------------------------------->
+
+
+    <div class="footer-dark">
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item footerblocks">
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li><a href="tel:09 52 30 67 21">09 52 30 67 21</a></li>
+                            <li style="color: white;">148 Rue Saint-Jacques, Étampes 91150</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item footerblocks">
+                        <h3>Suivez-nous</h3>
+                        <ul>
+                            <li><a href="https://fr-fr.facebook.com/TacosEtampes/" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/b_b_tacos/?hl=fr" target="_blank">Instagram</a></li>
+                            <li><a href="#footer">Snapchat : bb_tacos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text footerblocks">
+                        <h3>Commander :</h3>
+                        <a href="https://www.ubereats.com/fr/store/bb-tacos/HwxJK91LWkCnDvmz-8rc3w" target="_blank" style="text-decoration: none; color: white;">Ubereats</a>
+                    </div>
+                    
+                </div>
+                <p class="copyright">B&B Tacos © 2021</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <a href="#" class="back-to-top">
+        <img src="assets/images/toparrow.png" alt="">
+    </a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

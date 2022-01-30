@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@font-face {
+    font-family:'myWebFont' ;
+    src: url(fonts/Mailston.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+section{
+    height: 100vh;
+}
+
+.back-to-top{
+    color: white;
+    position: fixed;
+    bottom: 16px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    z-index: 999px;
+    display: flex;
+    font-size: 32px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .back-to-top.active{
+    opacity: 0.7; /*apparition au scroll*/
+    pointer-events: auto;
+  }
+
+  
+
+/*************************** NAVBAR *************************************/
+
+nav {  
+    background: #f8f8f8;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 30px;
+    left: 0;
+    right: 0;
+    z-index: 100;   
+}
+
+nav .logo img{
+    width: 60px;
+}
+
+nav .menu {
+    display: flex;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+nav .menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+nav .menu li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+}
+nav .menu li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 0;
+    height: 4px;
+    background-color: #ff7800;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+nav .menu li a:hover::before {
+    width: 100%;
+}
+
+/*************************** ACCUEIL *************************************/
+#one{
+    background: linear-gradient(90deg,rgba(0,0,0,0.8) 0 50% ,rgba(0,0,0,0.2)),url("images/ecaa0a0760b023589ef1417ff9d406585c848e63.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.accueil {
+    margin: 0 5%;
+    height: calc(140vh - 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.accueil .titre h1 {
+    font-family: 'myWebFont', sans-serif;
+    color: #fff;
+    font-size: 85px;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+.accueil .titre {
+    height: fit-content;
+     width: 50%;
+}
+
+.accueil .titre a {
+    color: #fff;
+    background-color: #ff7800;
+    text-decoration: 0;
+    font-weight: bold;
+    padding: 12px 18px;
+    width: fit-content;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.accueil .titre a:hover{
+    color: #ff7800;
+    background-color: #fff;
+}
+
+.reseaux ul li {
+    list-style: none;
+    margin: 25px 0;
+}
+.reseaux ul li a i {
+    font-size: 45px;
+    color: #fff;
+}
+
+/*************************************  ABOUT US  **************************************/
+
+.highlight{
+    background: linear-gradient(to bottom, transparent 60%, #ff770077 50%);
+    font-family:'myWebFont', sans-serif;
+    font-size: 40px;
+}
+
+.aboutus{
+    height: auto;
+    display: flex;
+    padding: 100px 60px;
+    justify-content: space-between;
+}
+
+.aboutus .quote{
+    width: 60%;
+}
+.quote h2{
+    padding-bottom: 20px;
+}
+.aboutus .devanture{
+    padding: 0 30px;
+}
+.aboutus .devanture img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #ff7800;
+}
+
+/*************************************  MENUS  **************************************/
+
+.menus-section{
+    height: auto;
+    padding: 50px 60px;
+}
+
+.menus h2{
+    padding-bottom: 30px;
+}
+
+.menus .menus-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 80px;
+    padding-bottom: 30px;
+}
+.menus .menus-images img{
+    width: 450px;
+    cursor: pointer;
+    box-shadow: 10px 10px 0px #ff7800;
+    border-radius: 10px;
+}
+
+.modal-img{
+    width: 100%;
+}
+
+/*******************SERVICES*************************/
+
+.services{
+    padding: 5px;
+    width: 100%;
+    background: #ff7800;
+    z-index: 10;
+    height: auto;
+    display: flex;
+    text-align: center;
+    border: 5px dashed white;
+}
+
+.colonne{
+    flex-basis: 32%;
+}
+
+
+
+/****************************  GALLERIE   *************************/
+
+
+.gallerie-carousel{
+    padding: 30px 0;
+}
+
+.carousel-item img{
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/****************************  REVIEWS   *************************/
+
+.reviews{
+    padding: 0 40px;
+}
+.reviews h2{
+    padding-bottom: 20px;
+}
+
+/****************************  INFOS UTILES   *************************/
+
+.infosutiles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.googlemap img{
+    width: 400px;
+}
+.horaires img{
+    width: 500px;
+    box-shadow: 10px 10px 0px #ff7800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.googlemap h3, .horaires h3{
+    padding-bottom: 20px;
+}
+
+
+
+/****************************  FOOTER   *************************/
+
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#0c0c0c;
+  text-align: center;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:19px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:16px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+
+
+
+
+/************************************************* RESPONSIVE ********************************************************/
+
+/*Responsive*/
+@media(max-width:1000px) {
+    body {
+        background-position: center;
+        background-size: cover;
+        height: fit-content;
+    }
+
+    .back-to-top.active{
+        opacity: 0;
+    }
+
+    /****************** HEADER ******************/
+
+    nav .menu {
+        display: none;
+    }
+    nav .menu.responsive {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+    nav .menu li {
+        margin: 25px 0;
+    }
+    .accueil .titre {
+        width: 80%;       
+    }
+    .accueil .titre h1{
+        font-size: 50px;
+    }
+    .accueil .reseaux ul li a i {
+        font-size: 25px;
+    }
+    .menu-toggle{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .menu-toggle::before {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: #ff7800;
+        box-shadow:  0 10px 0 #ff7800;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .menu-toggle.active::before {
+        box-shadow:  0 0 0 #ff7800;
+        transform: translateY(0);
+    }
+    .menu-toggle::after {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: #ff7800;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .menu-toggle.active::after{
+        transform: translateY(0);
+    }
+
+    /****************** ABOUT US ******************/
+
+    .aboutus{
+    flex-direction: column;
+    }
+    .aboutus .quote{
+    width: 70%;
+    }
+    .aboutus .devanture img{
+    padding: 40px 0;
+    width: 250px;
+    margin-left: -20px;
+    }
+
+    /****************** MENUS ******************/
+
+    .menus-section{
+        padding: 50px 20px;
+    }
+
+    .menus .menus-images{
+        gap: 30px;
+    }
+    .menus .menus-images img{
+        width: 300px;
+    }
+
+    /****************** SERVICES ******************/
+
+    .services{
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /****************** REVIEWS ******************/
+
+    .elfsight-app-a8bf950f-4b0d-4dae-a5ba-b372f24cc540{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    /****************** INFOS UTILES ******************/
+
+    .infosutiles{
+        flex-direction: column;
+        margin-left: -20px;
+    }
+    .googlemap{
+        width: 300px;
+        padding-bottom: 30px;
+    }
+    .horaires img{
+        width: 300px;
+    }
+
+    /****************** FOOTER ******************/
+
+    .footerblocks{
+        padding-bottom: 30px;
+    }
+    
+}
